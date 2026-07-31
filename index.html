@@ -274,13 +274,22 @@
     .donate-box > p { max-width: 740px; margin: 0 auto 26px; color: #dce5ec; }
     .donation-points { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 28px; font-weight: 750; font-size: .92rem; }
     .donation-points span::before { content: "✓ "; color: var(--gold-light); }
+    #donate {
+      scroll-margin-top: 96px;
+    }
     .paypal-shell {
       max-width: 520px;
+      height: 520px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0 20px 20px;
       background: white;
       border-radius: 16px;
-      min-height: 92px;
+      overflow: hidden;
+    }
+    /* PayPal's hosted checkout includes a large product-image gallery.
+       Move the embed upward so donors land directly on the amount field. */
+    #paypal-container-D7ZFPSN3MQC6Q {
+      margin-top: -430px;
     }
     .secure-note { font-size: .82rem; color: #aebdca; margin-top: 14px; }
 
