@@ -23,7 +23,9 @@
     }
 
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -31,6 +33,7 @@
       background: #f7f8fa;
       line-height: 1.65;
     }
+
     img { max-width: 100%; display: block; }
     a { color: inherit; }
 
@@ -43,6 +46,7 @@
       padding: 10px 14px;
       border-radius: 8px;
     }
+
     .skip-link:focus { left: 12px; }
 
     header {
@@ -54,6 +58,7 @@
       color: white;
       border-bottom: 1px solid rgba(255,255,255,.09);
     }
+
     .nav-wrap {
       width: min(1180px, 92%);
       min-height: 78px;
@@ -63,6 +68,7 @@
       align-items: center;
       gap: 24px;
     }
+
     .brand {
       display: flex;
       align-items: center;
@@ -71,12 +77,20 @@
       font-weight: 800;
       letter-spacing: .2px;
     }
+
     .header-logo {
       width: 52px;
       height: 52px;
       object-fit: contain;
     }
-    nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -84,7 +98,12 @@
       font-weight: 700;
       opacity: .92;
     }
-    nav a:hover, nav a:focus { color: var(--gold-light); }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--gold-light);
+    }
+
     .nav-donate {
       background: var(--gold);
       color: var(--navy) !important;
@@ -103,7 +122,9 @@
         linear-gradient(180deg, rgba(10,18,28,.46), rgba(10,18,28,.82)),
         url('images/hero-garden.jpg') center/cover no-repeat;
     }
+
     .hero-content { max-width: 940px; }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -118,19 +139,26 @@
       text-transform: uppercase;
       font-size: .78rem;
     }
+
     .hero h1 {
       margin: 0 0 20px;
       font-size: clamp(2.55rem, 6vw, 5rem);
       line-height: 1.03;
       letter-spacing: -2.5px;
     }
+
     .hero p {
       max-width: 780px;
       margin: 0 auto 18px;
       font-size: clamp(1rem, 2vw, 1.22rem);
       color: #eef3f7;
     }
-    .hero-trustline { font-weight: 800; color: #dce5ec !important; }
+
+    .hero-trustline {
+      font-weight: 800;
+      color: #dce5ec !important;
+    }
+
     .hero-buttons {
       margin-top: 30px;
       display: flex;
@@ -138,6 +166,7 @@
       gap: 14px;
       flex-wrap: wrap;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -151,12 +180,29 @@
       cursor: pointer;
       transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--gold); color: var(--navy); box-shadow: 0 10px 28px rgba(212,160,23,.28); }
-    .btn-primary:hover { background: var(--gold-light); }
-    .btn-secondary { color: white; border: 1px solid rgba(255,255,255,.42); background: rgba(255,255,255,.1); }
 
-    .section { width: min(1120px, 90%); margin: auto; padding: 86px 0; }
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      box-shadow: 0 10px 28px rgba(212,160,23,.28);
+    }
+
+    .btn-primary:hover { background: var(--gold-light); }
+
+    .btn-secondary {
+      color: white;
+      border: 1px solid rgba(255,255,255,.42);
+      background: rgba(255,255,255,.1);
+    }
+
+    .section {
+      width: min(1120px, 90%);
+      margin: auto;
+      padding: 86px 0;
+    }
+
     .section-kicker {
       text-align: center;
       color: #8b6500;
@@ -166,6 +212,7 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
+
     .section h2 {
       text-align: center;
       color: var(--navy);
@@ -174,6 +221,7 @@
       letter-spacing: -1.2px;
       margin: 0 0 16px;
     }
+
     .section-intro {
       text-align: center;
       max-width: 780px;
@@ -188,8 +236,20 @@
       align-items: center;
       gap: 42px;
     }
-    .split img { border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 4 / 3; object-fit: cover; }
-    .split h3 { color: var(--navy); font-size: 1.7rem; margin-top: 0; }
+
+    .split img {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .split h3 {
+      color: var(--navy);
+      font-size: 1.7rem;
+      margin-top: 0;
+    }
+
     .highlight-box {
       background: white;
       border-left: 5px solid var(--gold);
@@ -204,6 +264,7 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
     }
+
     .card {
       background: white;
       border: 1px solid var(--line);
@@ -211,8 +272,17 @@
       padding: 28px;
       box-shadow: 0 12px 32px rgba(15,23,42,.07);
     }
-    .card h3 { margin: 0 0 10px; color: var(--navy-2); }
-    .card p { margin: 0; color: var(--muted); }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy-2);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .icon {
       width: 44px;
       height: 44px;
@@ -229,19 +299,61 @@
       background: var(--navy);
       color: white;
     }
-    .feature-band .section h2, .feature-band .section-intro { color: white; }
-    .feature-band .section-intro { opacity: .78; }
+
+    .feature-band .section h2,
+    .feature-band .section-intro {
+      color: white;
+    }
+
+    .feature-band .section-intro {
+      opacity: .78;
+    }
+
     .photo-grid {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
       gap: 20px;
     }
-    .photo-card { position: relative; min-height: 330px; overflow: hidden; border-radius: 20px; box-shadow: var(--shadow); }
-    .photo-card img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
-    .photo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 38%, rgba(8,16,25,.8)); }
-    .photo-card .caption { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 22px; }
-    .photo-card h3 { margin: 0 0 4px; }
-    .photo-card p { margin: 0; opacity: .82; }
+
+    .photo-card {
+      position: relative;
+      min-height: 330px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 38%, rgba(8,16,25,.8));
+    }
+
+    .photo-card .caption {
+      position: absolute;
+      z-index: 2;
+      left: 24px;
+      right: 24px;
+      bottom: 22px;
+    }
+
+    .photo-card h3 {
+      margin: 0 0 4px;
+    }
+
+    .photo-card p {
+      margin: 0;
+      opacity: .82;
+    }
 
     .rules-list {
       max-width: 880px;
@@ -251,14 +363,53 @@
       padding: 34px;
       box-shadow: var(--shadow);
     }
-    .rules-list ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; }
-    .rules-list li { padding-left: 34px; position: relative; }
-    .rules-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #8b6500; font-weight: 900; }
 
-    .impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .impact-item { background: #fff; border-radius: 16px; padding: 24px; text-align: center; box-shadow: 0 10px 30px rgba(15,23,42,.07); }
-    .impact-item strong { display: block; color: var(--navy); font-size: 1.1rem; }
-    .impact-item span { color: var(--muted); font-size: .92rem; }
+    .rules-list ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 16px;
+    }
+
+    .rules-list li {
+      padding-left: 34px;
+      position: relative;
+    }
+
+    .rules-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #8b6500;
+      font-weight: 900;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .impact-item {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(15,23,42,.07);
+    }
+
+    .impact-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+
+    .impact-item span {
+      color: var(--muted);
+      font-size: .92rem;
+    }
 
     .donate-box {
       background:
@@ -270,29 +421,108 @@
       text-align: center;
       box-shadow: var(--shadow);
     }
-    .donate-box h2 { color: white; margin-top: 0; }
-    .donate-box > p { max-width: 740px; margin: 0 auto 26px; color: #dce5ec; }
-    .donation-points { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 28px; font-weight: 750; font-size: .92rem; }
-    .donation-points span::before { content: "✓ "; color: var(--gold-light); }
+
+    .donate-box h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .donate-box > p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+      color: #dce5ec;
+    }
+
+    .donation-points {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      font-weight: 750;
+      font-size: .92rem;
+    }
+
+    .donation-points span::before {
+      content: "✓ ";
+      color: var(--gold-light);
+    }
+
     #donate {
       scroll-margin-top: 96px;
     }
-    /* PayPal's hosted checkout includes a large product-image gallery.
-       Move the embed upward so donors land directly on the amount field. */
-  .paypal-shell {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 24px;
-  background: white;
-  border-radius: 16px;
-  overflow: visible;
-}
-    .secure-note { font-size: .82rem; color: #aebdca; margin-top: 14px; }
 
-    .form-wrap { max-width: 830px; margin: auto; background: white; padding: 34px; border-radius: 20px; box-shadow: var(--shadow); }
-    form { display: grid; gap: 16px; }
-    label { display: block; font-weight: 800; color: var(--navy-2); margin-bottom: 6px; }
-    input, textarea, select {
+    .paypal-shell {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      overflow: visible;
+    }
+
+    .donation-amount-wrap {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .donation-amount-wrap label {
+      color: var(--navy);
+    }
+
+    .donation-amount-input {
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    #paypal-button-container {
+      min-height: 45px;
+    }
+
+    .donation-status {
+      margin: 14px 0 0;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .donation-status.success {
+      color: #166534;
+    }
+
+    .donation-status.error {
+      color: #b91c1c;
+    }
+
+    .secure-note {
+      font-size: .82rem;
+      color: #aebdca;
+      margin-top: 14px;
+    }
+
+    .form-wrap {
+      max-width: 830px;
+      margin: auto;
+      background: white;
+      padding: 34px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      font-weight: 800;
+      color: var(--navy-2);
+      margin-bottom: 6px;
+    }
+
+    input,
+    textarea,
+    select {
       width: 100%;
       padding: 13px 14px;
       border: 1px solid #cbd2d9;
@@ -300,64 +530,164 @@
       font: inherit;
       background: white;
     }
-    textarea { min-height: 140px; resize: vertical; }
 
-    details { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
-    details + details { margin-top: 12px; }
-    summary { cursor: pointer; font-weight: 850; color: var(--navy); }
-    details p { margin-bottom: 0; color: var(--muted); }
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
 
-    .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .contact-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 10px 28px rgba(15,23,42,.07); }
-    .contact-card h3 { margin-top: 0; color: var(--navy); }
-    .contact-card p { margin-bottom: 0; }
+    details {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
 
-    footer { background: #0f1b28; color: white; padding: 54px 20px; }
-    .footer-wrap { width: min(1120px, 90%); margin: auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 34px; }
-    footer h3, footer h4 { margin-top: 0; }
-    footer a { color: #d9e2ec; text-decoration: none; }
-    footer a:hover { color: var(--gold-light); }
-    .small { color: #b7c4cf; font-size: .9rem; }
+    details + details {
+      margin-top: 12px;
+    }
 
-    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
+    summary {
+      cursor: pointer;
+      font-weight: 850;
+      color: var(--navy);
+    }
+
+    details p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(15,23,42,.07);
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .contact-card p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #0f1b28;
+      color: white;
+      padding: 54px 20px;
+    }
+
+    .footer-wrap {
+      width: min(1120px, 90%);
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 34px;
+    }
+
+    footer h3,
+    footer h4 {
+      margin-top: 0;
+    }
+
+    footer a {
+      color: #d9e2ec;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--gold-light);
+    }
+
+    .small {
+      color: #b7c4cf;
+      font-size: .9rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .reveal { opacity: 1; transform: none; transition: none; }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
       .btn { transition: none; }
     }
 
     @media (max-width: 900px) {
       nav { display: none; }
-      .split, .photo-grid { grid-template-columns: 1fr; }
-      .cards { grid-template-columns: 1fr 1fr; }
-      .impact-grid, .contact-grid { grid-template-columns: 1fr 1fr; }
-      .footer-wrap { grid-template-columns: 1fr; }
+      .split,
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+      .impact-grid,
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-wrap {
+        grid-template-columns: 1fr;
+      }
     }
+
     @media (max-width: 620px) {
       .brand span { font-size: .9rem; }
-      .header-logo { width: 44px; height: 44px; }
+      .header-logo {
+        width: 44px;
+        height: 44px;
+      }
       .hero { min-height: 660px; }
-      .cards, .impact-grid, .contact-grid { grid-template-columns: 1fr; }
-      .section { width: 92%; padding: 68px 0; }
+      .cards,
+      .impact-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .section {
+        width: 92%;
+        padding: 68px 0;
+      }
       .form-wrap { padding: 22px; }
       .paypal-shell { padding: 12px; }
     }
   </style>
 
-  <!-- PayPal Hosted Buttons SDK: loaded once per page -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAq3tUNA-J865TX_RQ2Egkgfu3Ev1Tja9HQyqLuDy7CsC_bhtLakBYn3zM0Lev8_pdT7_9Hu9_lNAgJNU&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=Aa3s7fcOcOhLyjjKoZ42InX2NXu8ePHbUtY6sc8N9B5x2wNPXP7vaU2eSPa_fH46n38TLzj9y3FJM4SO&currency=USD&intent=capture&components=buttons&enable-funding=venmo"></script>
 </head>
+
 <body>
+
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header>
     <div class="nav-wrap">
-      <a class="brand" href="#top" aria-label="Domus Sobrietatis Ministry Trust home">
-        <img src="dsmt-logo.png" alt="" class="header-logo" onerror="this.style.display='none'" />
+      <a class="brand" href="#top">
+        <img src="dsmt-logo.png" alt="" class="header-logo" />
         <span>Domus Sobrietatis Ministry Trust</span>
       </a>
-      <nav aria-label="Main navigation">
+
+      <nav>
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
         <a href="#structure">Structure</a>
@@ -370,12 +700,22 @@
   </header>
 
   <main id="main">
+
     <section class="hero" id="top">
       <div class="hero-content reveal">
         <div class="eyebrow">Veterans • Recovery • Purpose</div>
+
         <h1>A Stable Place to Rebuild</h1>
-        <p>Structured recovery housing and community support for veterans pursuing sobriety, responsibility, and long-term independence.</p>
-        <p class="hero-trustline">Serving veterans in Northeast Ohio with dignity, accountability, and purpose.</p>
+
+        <p>
+          Structured recovery housing and community support for veterans pursuing sobriety,
+          responsibility, and long-term independence.
+        </p>
+
+        <p class="hero-trustline">
+          Serving veterans in Northeast Ohio with dignity, accountability, and purpose.
+        </p>
+
         <div class="hero-buttons">
           <a class="btn btn-primary" href="#donate">Support the Mission</a>
           <a class="btn btn-secondary" href="#apply">Apply for Housing</a>
@@ -384,166 +724,771 @@
     </section>
 
     <section class="section reveal" id="about">
+
       <div class="section-kicker">Our mission</div>
+
       <h2>Recovery Needs More Than a Bed</h2>
-      <p class="section-intro">Domus Sobrietatis Ministry Trust is building a stable environment where veterans can restore healthy routines, strengthen community ties, and move forward with dignity.</p>
+
+      <p class="section-intro">
+        Domus Sobrietatis Ministry Trust is building a stable environment where veterans can
+        restore healthy routines, strengthen community ties, and move forward with dignity.
+      </p>
+
       <div class="split">
+
         <div>
           <h3>Structure, fellowship, and a path forward</h3>
-          <p>Many veterans leave treatment or unstable circumstances without a dependable place to continue their progress. Our housing model is designed to bridge that gap with clear expectations, sober living, shared responsibility, and practical support.</p>
-          <p>Residents are encouraged to build consistency through household participation, recovery-focused activities, mentorship, service, and healthy community involvement.</p>
-          <div class="highlight-box"><strong>Our belief:</strong> lasting change grows where stability, accountability, purpose, and community are present every day.</div>
+
+          <p>
+            Many veterans leave treatment or unstable circumstances without a dependable place
+            to continue their progress. Our housing model is designed to bridge that gap with
+            clear expectations, sober living, shared responsibility, and practical support.
+          </p>
+
+          <p>
+            Residents are encouraged to build consistency through household participation,
+            recovery-focused activities, mentorship, service, and healthy community involvement.
+          </p>
+
+          <div class="highlight-box">
+            <strong>Our belief:</strong>
+            lasting change grows where stability, accountability, purpose, and community are
+            present every day.
+          </div>
         </div>
-        <img src="images/community-porch.jpg" alt="Veterans sharing fellowship outside a recovery home" loading="lazy" />
+
+        <img
+          src="images/community-porch.jpg"
+          alt="Veterans sharing fellowship outside a recovery home"
+        />
+
       </div>
     </section>
 
     <section class="section reveal" id="who-we-serve">
+
       <div class="section-kicker">Who we serve</div>
+
       <h2>Veterans and the People Who Stand With Them</h2>
-      <p class="section-intro">Our work connects veterans in recovery with referral partners, volunteers, churches, agencies, and community supporters.</p>
+
+      <p class="section-intro">
+        Our work connects veterans in recovery with referral partners, volunteers, churches,
+        agencies, and community supporters.
+      </p>
+
       <div class="cards">
-        <article class="card"><div class="icon">★</div><h3>Veterans in Recovery</h3><p>Men and women committed to sobriety, personal responsibility, and rebuilding a stable daily life.</p></article>
-        <article class="card"><div class="icon">↔</div><h3>Referral Partners</h3><p>Treatment providers, veteran organizations, courts, churches, and case managers seeking structured placement options.</p></article>
-        <article class="card"><div class="icon">♥</div><h3>Community Supporters</h3><p>Individuals and organizations contributing time, resources, professional skills, or financial support.</p></article>
+
+        <article class="card">
+          <div class="icon">★</div>
+          <h3>Veterans in Recovery</h3>
+          <p>
+            Men and women committed to sobriety, personal responsibility, and rebuilding a stable
+            daily life.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">↔</div>
+          <h3>Referral Partners</h3>
+          <p>
+            Treatment providers, veteran organizations, courts, churches, and case managers
+            seeking structured placement options.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">♥</div>
+          <h3>Community Supporters</h3>
+          <p>
+            Individuals and organizations contributing time, resources, professional skills, or
+            financial support.
+          </p>
+        </article>
+
       </div>
     </section>
 
     <section class="feature-band" id="programs">
       <div class="section reveal">
-        <div class="section-kicker" style="color:#efc75e">Life in the program</div>
+
+        <div class="section-kicker" style="color:#efc75e">
+          Life in the program
+        </div>
+
         <h2>Purpose Is Built Through Daily Action</h2>
-        <p class="section-intro">Residents take part in meaningful routines and service activities that reinforce teamwork, responsibility, and connection.</p>
+
+        <p class="section-intro">
+          Residents take part in meaningful routines and service activities that reinforce
+          teamwork, responsibility, and connection.
+        </p>
+
         <div class="photo-grid">
-          <article class="photo-card"><img src="images/beekeeping.jpg" alt="Veterans learning beekeeping together" loading="lazy" /><div class="caption"><h3>Skills and Purpose</h3><p>Hands-on activities that build patience, confidence, and teamwork.</p></div></article>
-          <article class="photo-card"><img src="images/home-care.jpg" alt="Veterans working together to care for their home" loading="lazy" /><div class="caption"><h3>Shared Responsibility</h3><p>Residents contribute to a clean, respectful, and stable home.</p></div></article>
+
+          <article class="photo-card">
+            <img
+              src="images/beekeeping.jpg"
+              alt="Veterans learning beekeeping together"
+            />
+
+            <div class="caption">
+              <h3>Skills and Purpose</h3>
+              <p>
+                Hands-on activities that build patience, confidence, and teamwork.
+              </p>
+            </div>
+          </article>
+
+          <article class="photo-card">
+            <img
+              src="images/home-care.jpg"
+              alt="Veterans working together to care for their home"
+            />
+
+            <div class="caption">
+              <h3>Shared Responsibility</h3>
+              <p>
+                Residents contribute to a clean, respectful, and stable home.
+              </p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
     <section class="section reveal" id="structure">
+
       <div class="section-kicker">Program structure</div>
+
       <h2>Clear Standards Create Stability</h2>
-      <p class="section-intro">Consistency and accountability help residents establish routines that support long-term recovery.</p>
+
+      <p class="section-intro">
+        Consistency and accountability help residents establish routines that support long-term
+        recovery.
+      </p>
+
       <div class="rules-list">
+
         <ul>
           <li>Drug- and alcohol-free living environment</li>
           <li>Curfew: 10:00 PM weekdays and 11:00 PM weekends</li>
           <li>Weekly house meetings and consistent accountability</li>
           <li>Participation in recovery-focused programming</li>
           <li>Shared chores and respect for the home environment</li>
-          <li>Ongoing focus on responsibility, personal growth, and community participation</li>
+          <li>
+            Ongoing focus on responsibility, personal growth, and community participation
+          </li>
         </ul>
+
       </div>
     </section>
 
-    <section class="section reveal" aria-labelledby="support-helps">
+    <section class="section reveal">
+
       <div class="section-kicker">What support helps provide</div>
-      <h2 id="support-helps">Practical Help That Strengthens Recovery</h2>
-      <p class="section-intro">Contributions help us build and maintain the environment veterans need to continue moving forward.</p>
+
+      <h2>Practical Help That Strengthens Recovery</h2>
+
+      <p class="section-intro">
+        Contributions help us build and maintain the environment veterans need to continue moving
+        forward.
+      </p>
+
       <div class="impact-grid">
-        <div class="impact-item"><strong>Safe Housing</strong><span>Stable and sober living spaces</span></div>
-        <div class="impact-item"><strong>Household Needs</strong><span>Food, hygiene, and essential supplies</span></div>
-        <div class="impact-item"><strong>Transportation</strong><span>Access to appointments and services</span></div>
-        <div class="impact-item"><strong>Life Skills</strong><span>Purposeful activities and mentorship</span></div>
+
+        <div class="impact-item">
+          <strong>Safe Housing</strong>
+          <span>Stable and sober living spaces</span>
+        </div>
+
+        <div class="impact-item">
+          <strong>Household Needs</strong>
+          <span>Food, hygiene, and essential supplies</span>
+        </div>
+
+        <div class="impact-item">
+          <strong>Transportation</strong>
+          <span>Access to appointments and services</span>
+        </div>
+
+        <div class="impact-item">
+          <strong>Life Skills</strong>
+          <span>Purposeful activities and mentorship</span>
+        </div>
+
       </div>
     </section>
 
     <section class="section reveal" id="referrals">
+
       <div class="section-kicker">Partnerships</div>
+
       <h2>Referral and Community Partnerships</h2>
-      <p class="section-intro">We welcome communication from veteran organizations, treatment providers, courts, churches, case managers, and community agencies.</p>
+
+      <p class="section-intro">
+        We welcome communication from veteran organizations, treatment providers, courts,
+        churches, case managers, and community agencies.
+      </p>
+
       <div class="cards">
-        <article class="card"><h3>For Providers</h3><p>A structured recovery-housing option for veterans who need routine, accountability, and stability.</p></article>
-        <article class="card"><h3>For Case Managers</h3><p>A clear point of contact for discussing potential placement, readiness, and program expectations.</p></article>
-        <article class="card"><h3>For Community Partners</h3><p>Opportunities for volunteer service, transportation support, household donations, outreach, and collaboration.</p></article>
+
+        <article class="card">
+          <h3>For Providers</h3>
+          <p>
+            A structured recovery-housing option for veterans who need routine, accountability,
+            and stability.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>For Case Managers</h3>
+          <p>
+            A clear point of contact for discussing potential placement, readiness, and program
+            expectations.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>For Community Partners</h3>
+          <p>
+            Opportunities for volunteer service, transportation support, household donations,
+            outreach, and collaboration.
+          </p>
+        </article>
+
       </div>
     </section>
 
     <section class="section reveal" id="donate">
+
       <div class="donate-box">
-        <div class="section-kicker" style="color:#efc75e">Give securely</div>
-        <h2>Support the Mission</h2>
-        <p>Your contribution helps provide housing, essential supplies, resident support, and purpose-centered programming for veterans rebuilding their lives.</p>
-        <div class="donation-points"><span>Choose your amount</span><span>PayPal or eligible payment methods</span><span>Secure checkout</span></div>
-        <div class="paypal-shell">
-          <div id="paypal-container-VF9Y8956XQNK6"></div>
+
+        <div class="section-kicker" style="color:#efc75e">
+          Give securely
         </div>
-        <p class="secure-note">Payments are processed securely by PayPal. No payment information is stored on this website.</p>
+
+        <h2>Support the Mission</h2>
+
+        <p>
+          Your contribution helps provide housing, essential supplies, resident support, and
+          purpose-centered programming for veterans rebuilding their lives.
+        </p>
+
+        <div class="donation-points">
+          <span>Choose your amount</span>
+          <span>PayPal or eligible payment methods</span>
+          <span>Secure checkout</span>
+        </div>
+
+        <div class="paypal-shell">
+
+          <div class="donation-amount-wrap">
+            <label for="donation-amount">
+              Donation amount (USD)
+            </label>
+
+            <input
+              class="donation-amount-input"
+              id="donation-amount"
+              type="number"
+              min="1.00"
+              step="0.01"
+              value="25.00"
+            />
+          </div>
+
+          <div id="paypal-button-container"></div>
+
+          <p
+            id="donation-status"
+            class="donation-status"
+            role="status"
+          ></p>
+
+        </div>
+
+        <p class="secure-note">
+          Payments are processed securely by PayPal. No payment information is stored on this website.
+        </p>
+
       </div>
     </section>
 
     <section class="section reveal" id="apply">
+
       <div class="section-kicker">Housing inquiry</div>
+
       <h2>Apply for Housing</h2>
-      <p class="section-intro">Submit an initial inquiry and a member of the organization can follow up about availability and next steps.</p>
+
+      <p class="section-intro">
+        Submit an initial inquiry and a member of the organization can follow up about availability
+        and next steps.
+      </p>
+
       <div class="form-wrap">
-        <form action="https://formspree.io/f/xbdpazeb" method="POST">
-          <div><label for="name">Full Name</label><input id="name" name="full_name" type="text" autocomplete="name" required /></div>
-          <div><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
-          <div><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
-          <div><label for="veteran">Are you a veteran?</label><select id="veteran" name="veteran_status"><option>Yes</option><option>No</option><option>Prefer not to say</option></select></div>
-          <div><label for="referral">How did you hear about us?</label><input id="referral" name="referral_source" type="text" placeholder="Agency, church, friend, online, etc." /></div>
-          <div><label for="message">Tell us a little about your situation</label><textarea id="message" name="message"></textarea></div>
-          <button class="btn btn-primary" type="submit">Submit Application Inquiry</button>
+
+        <form
+          action="https://formspree.io/f/xbdpazeb"
+          method="POST"
+        >
+
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              name="full_name"
+              type="text"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+            />
+          </div>
+
+          <div>
+            <label for="veteran">Are you a veteran?</label>
+
+            <select
+              id="veteran"
+              name="veteran_status"
+            >
+              <option>Yes</option>
+              <option>No</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="referral">How did you hear about us?</label>
+
+            <input
+              id="referral"
+              name="referral_source"
+              type="text"
+              placeholder="Agency, church, friend, online, etc."
+            />
+          </div>
+
+          <div>
+            <label for="message">
+              Tell us a little about your situation
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+            ></textarea>
+          </div>
+
+          <button
+            class="btn btn-primary"
+            type="submit"
+          >
+            Submit Application Inquiry
+          </button>
+
         </form>
+
       </div>
     </section>
 
     <section class="section reveal" id="faq">
-      <div class="section-kicker">Common questions</div>
+
+      <div class="section-kicker">
+        Common questions
+      </div>
+
       <h2>Frequently Asked Questions</h2>
-      <p class="section-intro">General information about housing, referrals, and community support.</p>
+
       <div style="max-width:850px;margin:auto">
-        <details><summary>Who may submit a housing inquiry?</summary><p>Veterans, family members, case managers, treatment providers, and referral partners may contact us. Final placement depends on program fit, readiness, and availability.</p></details>
-        <details><summary>Is the home drug and alcohol free?</summary><p>Yes. Residents are expected to maintain sobriety and follow all house rules and recovery-focused expectations.</p></details>
-        <details><summary>Can organizations refer veterans?</summary><p>Yes. Treatment providers, courts, veteran organizations, churches, and case managers are encouraged to contact us regarding referrals and partnerships.</p></details>
-        <details><summary>How can the community help?</summary><p>Support can include financial contributions, household supplies, transportation assistance, mentorship, professional services, and volunteer projects.</p></details>
+
+        <details>
+          <summary>
+            Who may submit a housing inquiry?
+          </summary>
+
+          <p>
+            Veterans, family members, case managers, treatment providers, and referral partners
+            may contact us.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Is the home drug and alcohol free?
+          </summary>
+
+          <p>
+            Yes. Residents are expected to maintain sobriety and follow all house rules.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Can organizations refer veterans?
+          </summary>
+
+          <p>
+            Yes. Treatment providers, veteran organizations, churches, courts, and case managers
+            may contact us regarding referrals.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            How can the community help?
+          </summary>
+
+          <p>
+            Support can include donations, household supplies, transportation assistance,
+            mentorship, professional services, and volunteer projects.
+          </p>
+        </details>
+
       </div>
     </section>
 
     <section class="section reveal" id="contact">
-      <div class="section-kicker">Contact</div>
+
+      <div class="section-kicker">
+        Contact
+      </div>
+
       <h2>Connect With DSMT</h2>
-      <p class="section-intro">Reach out regarding referrals, housing inquiries, donations, volunteer opportunities, or community partnerships.</p>
+
       <div class="contact-grid">
-        <div class="contact-card"><h3>Organization</h3><p>Domus Sobrietatis Ministry Trust</p></div>
-        <div class="contact-card"><h3>Location</h3><p>Lakewood, Ohio</p></div>
-        <div class="contact-card"><h3>Email</h3><p><a href="mailto:greatfeeling@bluemailx.com">greatfeeling@bluemailx.com</a></p></div>
-        <div class="contact-card"><h3>Phone</h3><p><a href="tel:12162009733">(216) 200-9733</a></p></div>
+
+        <div class="contact-card">
+          <h3>Organization</h3>
+          <p>Domus Sobrietatis Ministry Trust</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Location</h3>
+          <p>Lakewood, Ohio</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:greatfeeling@bluemailx.com">
+              greatfeeling@bluemailx.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>
+            <a href="tel:12162009733">
+              (216) 200-9733
+            </a>
+          </p>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer>
+
     <div class="footer-wrap">
-      <div><h3>Domus Sobrietatis Ministry Trust</h3><p class="small">Structured recovery housing and support for veterans in Northeast Ohio.</p><p class="small">© <span id="year"></span> Domus Sobrietatis Ministry Trust.</p></div>
-      <div><h4>Quick Links</h4><p><a href="#about">About</a></p><p><a href="#programs">Programs</a></p><p><a href="#apply">Apply</a></p><p><a href="#donate">Donate</a></p></div>
-      <div><h4>Contact</h4><p>Lakewood, Ohio</p><p><a href="mailto:greatfeeling@bluemailx.com">greatfeeling@bluemailx.com</a></p><p><a href="tel:12162009733">(216) 200-9733</a></p></div>
+
+      <div>
+        <h3>Domus Sobrietatis Ministry Trust</h3>
+
+        <p class="small">
+          Structured recovery housing and support for veterans in Northeast Ohio.
+        </p>
+
+        <p class="small">
+          © <span id="year"></span> Domus Sobrietatis Ministry Trust.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#about">About</a></p>
+        <p><a href="#programs">Programs</a></p>
+        <p><a href="#apply">Apply</a></p>
+        <p><a href="#donate">Donate</a></p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Lakewood, Ohio</p>
+        <p>
+          <a href="mailto:greatfeeling@bluemailx.com">
+            greatfeeling@bluemailx.com
+          </a>
+        </p>
+        <p>
+          <a href="tel:12162009733">
+            (216) 200-9733
+          </a>
+        </p>
+      </div>
+
     </div>
+
   </footer>
 
   <script>
-    paypal.HostedButtons({
-    hostedButtonId: "VF9Y8956XQNK6"
-}).render("#paypal-container-VF9Y8956XQNK6");
 
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const DSMT_WORKER =
+      "https://dsmt-donation-receipts.thegreatfeeling.workers.dev";
 
-    const revealItems = document.querySelectorAll(".reveal");
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealItems.forEach((item) => observer.observe(item));
-    } else {
-      revealItems.forEach((item) => item.classList.add("visible"));
+    function getDonationAmount() {
+
+      const input =
+        document.getElementById("donation-amount");
+
+      const amount =
+        Number.parseFloat(input.value);
+
+      if (!Number.isFinite(amount) || amount < 1) {
+        throw new Error(
+          "Please enter a donation amount of at least $1.00."
+        );
+      }
+
+      return amount.toFixed(2);
     }
+
+    function setDonationStatus(message, type = "") {
+
+      const status =
+        document.getElementById("donation-status");
+
+      status.textContent = message;
+
+      status.className =
+        `donation-status ${type}`.trim();
+    }
+
+    paypal.Buttons({
+
+      style: {
+        layout: "vertical",
+        shape: "rect",
+        label: "donate"
+      },
+
+      async createOrder() {
+
+        try {
+
+          setDonationStatus(
+            "Preparing secure checkout…"
+          );
+
+          const amount =
+            getDonationAmount();
+
+          const response =
+            await fetch(
+              `${DSMT_WORKER}/create-order`,
+              {
+                method: "POST",
+
+                headers: {
+                  "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                  amount: amount
+                })
+              }
+            );
+
+          const data =
+            await response.json();
+
+          if (!response.ok || !data.id) {
+
+            console.error(
+              "Create order failed:",
+              data
+            );
+
+            throw new Error(
+              "Unable to start PayPal checkout."
+            );
+          }
+
+          setDonationStatus("");
+
+          return data.id;
+
+        } catch (error) {
+
+          setDonationStatus(
+            error.message,
+            "error"
+          );
+
+          throw error;
+        }
+      },
+
+      async onApprove(data) {
+
+        try {
+
+          setDonationStatus(
+            "Completing your donation…"
+          );
+
+          const response =
+            await fetch(
+              `${DSMT_WORKER}/capture-order`,
+              {
+                method: "POST",
+
+                headers: {
+                  "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                  orderID: data.orderID
+                })
+              }
+            );
+
+          const result =
+            await response.json();
+
+          if (!response.ok) {
+
+            console.error(
+              "Capture failed:",
+              result
+            );
+
+            throw new Error(
+              "PayPal could not complete the donation."
+            );
+          }
+
+          const capture =
+            result.purchase_units?.[0]
+              ?.payments?.captures?.[0];
+
+          const amount =
+            capture?.amount?.value ||
+            getDonationAmount();
+
+          setDonationStatus(
+            `Thank you. Your $${amount} donation was completed successfully.`,
+            "success"
+          );
+
+          document
+            .getElementById("donation-amount")
+            .disabled = true;
+
+        } catch (error) {
+
+          console.error(
+            "Donation capture error:",
+            error
+          );
+
+          setDonationStatus(
+            error.message,
+            "error"
+          );
+        }
+      },
+
+      onCancel() {
+
+        setDonationStatus(
+          "Donation checkout was canceled."
+        );
+      },
+
+      onError(error) {
+
+        console.error(
+          "PayPal checkout error:",
+          error
+        );
+
+        setDonationStatus(
+          "We couldn't complete the donation. Please try again.",
+          "error"
+        );
+      }
+
+    }).render("#paypal-button-container");
+
+    document
+      .getElementById("year")
+      .textContent =
+      new Date().getFullYear();
+
+    const revealItems =
+      document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+
+      const observer =
+        new IntersectionObserver(
+          (entries) => {
+
+            entries.forEach((entry) => {
+
+              if (entry.isIntersecting) {
+
+                entry.target.classList.add(
+                  "visible"
+                );
+
+                observer.unobserve(
+                  entry.target
+                );
+              }
+
+            });
+
+          },
+          {
+            threshold: 0.12
+          }
+        );
+
+      revealItems.forEach(
+        (item) =>
+          observer.observe(item)
+      );
+
+    } else {
+
+      revealItems.forEach(
+        (item) =>
+          item.classList.add("visible")
+      );
+    }
+
   </script>
+
 </body>
 </html>
