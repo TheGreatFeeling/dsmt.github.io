@@ -1851,91 +1851,96 @@
         }
       },
 
-      async onApprove(data) {
+     async onApprove(data) {
 
-        try {
+  try {
 
-          setDonationStatus(
-            "Completing your donation…"
-          );
+    setDonationStatus(
+      "Completing your donation…"
+    );
 
-          const response =
-            await fetch(
-              `${DSMT_WORKER}/capture-order`,
-              {
-                method: "POST",
+    const donor =
+      getDonorDetails();
 
-                headers: {
-                  "Content-Type":
-                    "application/json"
-                },
+    const response =
+      await fetch(
+        `${DSMT_WORKER}/capture-order`,
+        {
+          method: "POST",
 
-                body: JSON.stringify({
-                  orderID: data.orderID
-                })
-              }
-            );
+          headers: {
+            "Content-Type":
+              "application/json"
+          },
 
-          const result =
-            await response.json();
-
-          if (!response.ok) {
-
-            console.error(
-              "Capture failed:",
-              result
-            );
-
-            throw new Error(
-              "PayPal could not complete the donation."
-            );
-          }
-
-          const capture =
-            result.purchase_units?.[0]
-              ?.payments?.captures?.[0];
-
-          const amount =
-            capture?.amount?.value ||
-            getDonationAmount();
-
-          setDonationStatus(
-            `Thank you. Your $${amount} donation was completed successfully.`,
-            "success"
-          );
-
-          document
-            .getElementById(
-              "donation-amount"
-            )
-            .disabled = true;
-
-          document
-            .getElementById(
-              "donor-name"
-            )
-            .disabled = true;
-
-          document
-            .getElementById(
-              "donor-email"
-            )
-            .disabled = true;
-
-        } catch (error) {
-
-          console.error(
-            "Donation capture error:",
-            error
-          );
-
-          setDonationStatus(
-            error.message,
-            "error"
-          );
+          body: JSON.stringify({
+            orderID: data.orderID,
+            donorName: donor.name,
+            donorEmail: donor.email
+          })
         }
-      },
+      );
 
+    const result =
+      await response.json();
+
+    if (!response.ok) {
+
+      console.error(
+        "Capture failed:",
+        result
+      );
+
+      throw new Error(
+        "PayPal could not complete the donation."
+      );
+    }
+
+    const capture =
+      result.purchase_units?.[0]
+        ?.payments?.captures?.[0];
+
+    const amount =
+      capture?.amount?.value ||
+      getDonationAmount();
+
+    setDonationStatus(
+      `Thank you. Your $${amount} donation was completed successfully. Your donation acknowledgment will be sent to ${donor.email}.`,
+      "success"
+    );
+
+    document
+      .getElementById(
+        "donation-amount"
+      )
+      .disabled = true;
+
+    document
+      .getElementById(
+        "donor-name"
+      )
+      .disabled = true;
+
+    document
+      .getElementById(
+        "donor-email"
+      )
+      .disabled = true;
+
+  } catch (error) {
+
+    console.error(
+      "Donation capture error:",
+      error
+    );
+
+    setDonationStatus(
+      error.message,
+      "error"
+    );
+  }
+},
+      
       onCancel() {
 
         setDonationStatus(
