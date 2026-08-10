@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Domus Sobrietatis Ministry Trust</title>
-  <meta name="description" content="Structured recovery housing, community support, and purpose-centered programs for veterans in Northeast Ohio." />
+
+  <meta
+    name="description"
+    content="Structured recovery housing, community support, and purpose-centered programs for veterans in Northeast Ohio."
+  />
+
   <meta name="theme-color" content="#172434" />
 
   <style>
@@ -22,20 +28,31 @@
       --radius: 20px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
       background: #f7f8fa;
       line-height: 1.65;
     }
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
 
     .skip-link {
       position: absolute;
@@ -47,7 +64,9 @@
       border-radius: 8px;
     }
 
-    .skip-link:focus { left: 12px; }
+    .skip-link:focus {
+      left: 12px;
+    }
 
     header {
       position: sticky;
@@ -118,12 +137,19 @@
       color: white;
       text-align: center;
       padding: 110px 20px 90px;
+
       background:
-        linear-gradient(180deg, rgba(10,18,28,.46), rgba(10,18,28,.82)),
+        linear-gradient(
+          180deg,
+          rgba(10,18,28,.46),
+          rgba(10,18,28,.82)
+        ),
         url('images/hero-garden.jpg') center/cover no-repeat;
     }
 
-    .hero-content { max-width: 940px; }
+    .hero-content {
+      max-width: 940px;
+    }
 
     .eyebrow {
       display: inline-flex;
@@ -178,10 +204,15 @@
       font-weight: 800;
       border: 0;
       cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
     }
 
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
     .btn-primary {
       background: var(--gold);
@@ -189,7 +220,9 @@
       box-shadow: 0 10px 28px rgba(212,160,23,.28);
     }
 
-    .btn-primary:hover { background: var(--gold-light); }
+    .btn-primary:hover {
+      background: var(--gold-light);
+    }
 
     .btn-secondary {
       color: white;
@@ -335,7 +368,11 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(transparent 38%, rgba(8,16,25,.8));
+      background:
+        linear-gradient(
+          transparent 38%,
+          rgba(8,16,25,.8)
+        );
     }
 
     .photo-card .caption {
@@ -413,8 +450,13 @@
 
     .donate-box {
       background:
-        radial-gradient(circle at top right, rgba(212,160,23,.2), transparent 35%),
+        radial-gradient(
+          circle at top right,
+          rgba(212,160,23,.2),
+          transparent 35%
+        ),
         var(--navy);
+
       color: white;
       border-radius: 24px;
       padding: clamp(34px, 6vw, 64px);
@@ -470,6 +512,14 @@
       color: var(--navy);
     }
 
+    .donation-amount-wrap input {
+      margin-bottom: 16px;
+    }
+
+    .donation-amount-wrap input:last-child {
+      margin-bottom: 0;
+    }
+
     .donation-amount-input {
       font-size: 1.15rem;
       font-weight: 800;
@@ -493,48 +543,48 @@
       color: #b91c1c;
     }
 
-.secure-note {
-  font-size: .82rem;
-  color: #aebdca;
-  margin-top: 14px;
-}
+    .secure-note {
+      font-size: .82rem;
+      color: #aebdca;
+      margin-top: 14px;
+    }
 
-.donation-info-panel {
-  margin: 24px auto 0;
-  max-width: 720px;
-  padding: 24px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 16px;
-  text-align: left;
-}
+    .donation-info-panel {
+      margin: 24px auto 0;
+      max-width: 720px;
+      padding: 24px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      text-align: left;
+    }
 
-.donation-info-panel h3 {
-  margin: 0 0 8px;
-  color: #ffffff;
-}
+    .donation-info-panel h3 {
+      margin: 0 0 8px;
+      color: #ffffff;
+    }
 
-.donation-info-panel h3 + p {
-  margin-top: 0;
-}
+    .donation-info-panel h3 + p {
+      margin-top: 0;
+    }
 
-.donation-info-panel p {
-  color: #dce5ec;
-}
+    .donation-info-panel p {
+      color: #dce5ec;
+    }
 
-.donation-info-panel .btn {
-  margin-top: 6px;
-}
+    .donation-info-panel .btn {
+      margin-top: 6px;
+    }
 
-.form-wrap {
-  max-width: 830px;
-  margin: auto;
-}
+    .form-wrap {
+      max-width: 830px;
+      margin: auto;
+    }
 
-form {
-  display: grid;
-  gap: 16px;
-}
+    form {
+      display: grid;
+      gap: 16px;
+    }
 
     label {
       display: block;
@@ -639,7 +689,9 @@ form {
     .reveal {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity .7s ease, transform .7s ease;
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
     }
 
     .reveal.visible {
@@ -648,66 +700,111 @@ form {
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
+
+      html {
+        scroll-behavior: auto;
+      }
+
       .reveal {
         opacity: 1;
         transform: none;
         transition: none;
       }
-      .btn { transition: none; }
+
+      .btn {
+        transition: none;
+      }
     }
 
     @media (max-width: 900px) {
-      nav { display: none; }
+
+      nav {
+        display: none;
+      }
+
       .split,
       .photo-grid {
         grid-template-columns: 1fr;
       }
+
       .cards {
         grid-template-columns: 1fr 1fr;
       }
+
       .impact-grid,
       .contact-grid {
         grid-template-columns: 1fr 1fr;
       }
+
       .footer-wrap {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 620px) {
-      .brand span { font-size: .9rem; }
+
+      .brand span {
+        font-size: .9rem;
+      }
+
       .header-logo {
         width: 44px;
         height: 44px;
       }
-      .hero { min-height: 660px; }
+
+      .hero {
+        min-height: 660px;
+      }
+
       .cards,
       .impact-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
+
       .section {
         width: 92%;
         padding: 68px 0;
       }
-      .form-wrap { padding: 22px; }
-      .paypal-shell { padding: 12px; }
+
+      .form-wrap {
+        padding: 22px;
+      }
+
+      .paypal-shell {
+        padding: 12px;
+      }
     }
   </style>
 
-  <script src="https://www.paypal.com/sdk/js?client-id=Aa3s7fcOcOhLyjjKoZ42InX2NXu8ePHbUtY6sc8N9B5x2wNPXP7vaU2eSPa_fH46n38TLzj9y3FJM4SO&currency=USD&intent=capture&components=buttons&enable-funding=venmo"></script>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=Aa3s7fcOcOhLyjjKoZ42InX2NXu8ePHbUtY6sc8N9B5x2wNPXP7vaU2eSPa_fH46n38TLzj9y3FJM4SO&currency=USD&intent=capture&components=buttons&enable-funding=venmo">
+  </script>
+
 </head>
 
 <body>
 
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">
+    Skip to main content
+  </a>
 
   <header>
+
     <div class="nav-wrap">
+
       <a class="brand" href="#top">
-        <img src="dsmt-logo.png" alt="" class="header-logo" />
-        <span>Domus Sobrietatis Ministry Trust</span>
+
+        <img
+          src="dsmt-logo.png"
+          alt=""
+          class="header-logo"
+        />
+
+        <span>
+          Domus Sobrietatis Ministry Trust
+        </span>
+
       </a>
 
       <nav>
@@ -717,18 +814,28 @@ form {
         <a href="#referrals">Referrals</a>
         <a href="#apply">Apply</a>
         <a href="#contact">Contact</a>
-        <a class="nav-donate" href="#donate">Donate</a>
+        <a class="nav-donate" href="#donate">
+          Donate
+        </a>
       </nav>
+
     </div>
+
   </header>
 
   <main id="main">
 
     <section class="hero" id="top">
-      <div class="hero-content reveal">
-        <div class="eyebrow">Veterans • Recovery • Purpose</div>
 
-        <h1>A Stable Place to Rebuild</h1>
+      <div class="hero-content reveal">
+
+        <div class="eyebrow">
+          Veterans • Recovery • Purpose
+        </div>
+
+        <h1>
+          A Stable Place to Rebuild
+        </h1>
 
         <p>
           Structured recovery housing and community support for veterans pursuing sobriety,
@@ -740,17 +847,36 @@ form {
         </p>
 
         <div class="hero-buttons">
-          <a class="btn btn-primary" href="#donate">Support the Mission</a>
-          <a class="btn btn-secondary" href="#apply">Apply for Housing</a>
+
+          <a
+            class="btn btn-primary"
+            href="#donate"
+          >
+            Support the Mission
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="#apply"
+          >
+            Apply for Housing
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section reveal" id="about">
 
-      <div class="section-kicker">Our mission</div>
+      <div class="section-kicker">
+        Our mission
+      </div>
 
-      <h2>Recovery Needs More Than a Bed</h2>
+      <h2>
+        Recovery Needs More Than a Bed
+      </h2>
 
       <p class="section-intro">
         Domus Sobrietatis Ministry Trust is building a stable environment where veterans can
@@ -760,7 +886,10 @@ form {
       <div class="split">
 
         <div>
-          <h3>Structure, fellowship, and a path forward</h3>
+
+          <h3>
+            Structure, fellowship, and a path forward
+          </h3>
 
           <p>
             Many veterans leave treatment or unstable circumstances without a dependable place
@@ -774,10 +903,16 @@ form {
           </p>
 
           <div class="highlight-box">
-            <strong>Our belief:</strong>
+
+            <strong>
+              Our belief:
+            </strong>
+
             lasting change grows where stability, accountability, purpose, and community are
             present every day.
+
           </div>
+
         </div>
 
         <img
@@ -786,13 +921,18 @@ form {
         />
 
       </div>
+
     </section>
 
     <section class="section reveal" id="who-we-serve">
 
-      <div class="section-kicker">Who we serve</div>
+      <div class="section-kicker">
+        Who we serve
+      </div>
 
-      <h2>Veterans and the People Who Stand With Them</h2>
+      <h2>
+        Veterans and the People Who Stand With Them
+      </h2>
 
       <p class="section-intro">
         Our work connects veterans in recovery with referral partners, volunteers, churches,
@@ -802,43 +942,74 @@ form {
       <div class="cards">
 
         <article class="card">
-          <div class="icon">★</div>
-          <h3>Veterans in Recovery</h3>
+
+          <div class="icon">
+            ★
+          </div>
+
+          <h3>
+            Veterans in Recovery
+          </h3>
+
           <p>
             Men and women committed to sobriety, personal responsibility, and rebuilding a stable
             daily life.
           </p>
+
         </article>
 
         <article class="card">
-          <div class="icon">↔</div>
-          <h3>Referral Partners</h3>
+
+          <div class="icon">
+            ↔
+          </div>
+
+          <h3>
+            Referral Partners
+          </h3>
+
           <p>
             Treatment providers, veteran organizations, courts, churches, and case managers
             seeking structured placement options.
           </p>
+
         </article>
 
         <article class="card">
-          <div class="icon">♥</div>
-          <h3>Community Supporters</h3>
+
+          <div class="icon">
+            ♥
+          </div>
+
+          <h3>
+            Community Supporters
+          </h3>
+
           <p>
             Individuals and organizations contributing time, resources, professional skills, or
             financial support.
           </p>
+
         </article>
 
       </div>
+
     </section>
 
     <section class="feature-band" id="programs">
+
       <div class="section reveal">
 
-        <div class="section-kicker" style="color:#efc75e">
+        <div
+          class="section-kicker"
+          style="color:#efc75e"
+        >
           Life in the program
         </div>
 
-        <h2>Purpose Is Built Through Daily Action</h2>
+        <h2>
+          Purpose Is Built Through Daily Action
+        </h2>
 
         <p class="section-intro">
           Residents take part in meaningful routines and service activities that reinforce
@@ -848,42 +1019,62 @@ form {
         <div class="photo-grid">
 
           <article class="photo-card">
+
             <img
               src="images/beekeeping.jpg"
               alt="Veterans learning beekeeping together"
             />
 
             <div class="caption">
-              <h3>Skills and Purpose</h3>
+
+              <h3>
+                Skills and Purpose
+              </h3>
+
               <p>
                 Hands-on activities that build patience, confidence, and teamwork.
               </p>
+
             </div>
+
           </article>
 
           <article class="photo-card">
+
             <img
               src="images/home-care.jpg"
               alt="Veterans working together to care for their home"
             />
 
             <div class="caption">
-              <h3>Shared Responsibility</h3>
+
+              <h3>
+                Shared Responsibility
+              </h3>
+
               <p>
                 Residents contribute to a clean, respectful, and stable home.
               </p>
+
             </div>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
     <section class="section reveal" id="structure">
 
-      <div class="section-kicker">Program structure</div>
+      <div class="section-kicker">
+        Program structure
+      </div>
 
-      <h2>Clear Standards Create Stability</h2>
+      <h2>
+        Clear Standards Create Stability
+      </h2>
 
       <p class="section-intro">
         Consistency and accountability help residents establish routines that support long-term
@@ -893,24 +1084,44 @@ form {
       <div class="rules-list">
 
         <ul>
-          <li>Drug- and alcohol-free living environment</li>
-          <li>Curfew: 10:00 PM weekdays and 11:00 PM weekends</li>
-          <li>Weekly house meetings and consistent accountability</li>
-          <li>Participation in recovery-focused programming</li>
-          <li>Shared chores and respect for the home environment</li>
+          <li>
+            Drug- and alcohol-free living environment
+          </li>
+
+          <li>
+            Curfew: 10:00 PM weekdays and 11:00 PM weekends
+          </li>
+
+          <li>
+            Weekly house meetings and consistent accountability
+          </li>
+
+          <li>
+            Participation in recovery-focused programming
+          </li>
+
+          <li>
+            Shared chores and respect for the home environment
+          </li>
+
           <li>
             Ongoing focus on responsibility, personal growth, and community participation
           </li>
         </ul>
 
       </div>
+
     </section>
 
     <section class="section reveal">
 
-      <div class="section-kicker">What support helps provide</div>
+      <div class="section-kicker">
+        What support helps provide
+      </div>
 
-      <h2>Practical Help That Strengthens Recovery</h2>
+      <h2>
+        Practical Help That Strengthens Recovery
+      </h2>
 
       <p class="section-intro">
         Contributions help us build and maintain the environment veterans need to continue moving
@@ -940,13 +1151,21 @@ form {
         </div>
 
       </div>
+
     </section>
 
-    <section class="section reveal" id="referrals">
+    <section
+      class="section reveal"
+      id="referrals"
+    >
 
-      <div class="section-kicker">Partnerships</div>
+      <div class="section-kicker">
+        Partnerships
+      </div>
 
-      <h2>Referral and Community Partnerships</h2>
+      <h2>
+        Referral and Community Partnerships
+      </h2>
 
       <p class="section-intro">
         We welcome communication from veteran organizations, treatment providers, courts,
@@ -956,41 +1175,65 @@ form {
       <div class="cards">
 
         <article class="card">
-          <h3>For Providers</h3>
+
+          <h3>
+            For Providers
+          </h3>
+
           <p>
             A structured recovery-housing option for veterans who need routine, accountability,
             and stability.
           </p>
+
         </article>
 
         <article class="card">
-          <h3>For Case Managers</h3>
+
+          <h3>
+            For Case Managers
+          </h3>
+
           <p>
             A clear point of contact for discussing potential placement, readiness, and program
             expectations.
           </p>
+
         </article>
 
         <article class="card">
-          <h3>For Community Partners</h3>
+
+          <h3>
+            For Community Partners
+          </h3>
+
           <p>
             Opportunities for volunteer service, transportation support, household donations,
             outreach, and collaboration.
           </p>
+
         </article>
 
       </div>
+
     </section>
 
-    <section class="section reveal" id="donate">
+    <section
+      class="section reveal"
+      id="donate"
+    >
 
       <div class="donate-box">
 
-        <div class="section-kicker" style="color:#efc75e">
+        <div
+          class="section-kicker"
+          style="color:#efc75e"
+        >
           Give securely
         </div>
 
-        <h2>Support the Mission</h2>
+        <h2>
+          Support the Mission
+        </h2>
 
         <p>
           Your contribution helps provide housing, essential supplies, resident support, and
@@ -1006,6 +1249,31 @@ form {
         <div class="paypal-shell">
 
           <div class="donation-amount-wrap">
+
+            <label for="donor-name">
+              Name for donation acknowledgment
+            </label>
+
+            <input
+              id="donor-name"
+              type="text"
+              autocomplete="name"
+              placeholder="Full name"
+              required
+            />
+
+            <label for="donor-email">
+              Email for donation acknowledgment
+            </label>
+
+            <input
+              id="donor-email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+
             <label for="donation-amount">
               Donation amount (USD)
             </label>
@@ -1016,8 +1284,11 @@ form {
               type="number"
               min="1.00"
               step="0.01"
-              value="25.00"
+              inputmode="decimal"
+              placeholder="Enter amount"
+              required
             />
+
           </div>
 
           <div id="paypal-button-container"></div>
@@ -1031,42 +1302,58 @@ form {
         </div>
 
         <p class="secure-note">
-          Payments are processed securely by PayPal. No payment information is stored on this website.
+          Payments are processed securely by PayPal.
+          No payment information is stored on this website.
         </p>
 
         <div class="donation-info-panel">
 
-  <h3>Donation Acknowledgment</h3>
+          <h3>
+            Donation Acknowledgment
+          </h3>
 
-  <p>
-    After your donation is completed, Domus Sobrietatis Ministry Trust will provide
-    a charitable contribution acknowledgment for your records. Your acknowledgment
-    will include the donation date, amount, and transaction ID.
-  </p>
+          <p>
+            After your donation is completed, Domus Sobrietatis Ministry Trust will provide
+            a charitable contribution acknowledgment for your records. Your acknowledgment
+            will include the donation date, amount, and transaction ID.
+          </p>
 
-  <h3>Other Ways to Give</h3>
+          <h3>
+            Other Ways to Give
+          </h3>
 
-  <p>
-    Interested in donating property, vehicles, equipment, supplies, professional
-    services, or other assets? Please contact DSMT before making a non-cash
-    contribution so we can determine whether the contribution can be accepted and
-    provide the appropriate documentation.
-  </p>
+          <p>
+            Interested in donating property, vehicles, equipment, supplies, professional
+            services, or other assets? Please contact DSMT before making a non-cash
+            contribution so we can determine whether the contribution can be accepted and
+            provide the appropriate documentation.
+          </p>
 
-  <a class="btn btn-primary" href="#contact">
-    Contact DSMT About a Non-Cash Gift
-  </a>
+          <a
+            class="btn btn-primary"
+            href="#contact"
+          >
+            Contact DSMT About a Non-Cash Gift
+          </a>
 
-</div>
-        
+        </div>
+
       </div>
+
     </section>
 
-    <section class="section reveal" id="apply">
+    <section
+      class="section reveal"
+      id="apply"
+    >
 
-      <div class="section-kicker">Housing inquiry</div>
+      <div class="section-kicker">
+        Housing inquiry
+      </div>
 
-      <h2>Apply for Housing</h2>
+      <h2>
+        Apply for Housing
+      </h2>
 
       <p class="section-intro">
         Submit an initial inquiry and a member of the organization can follow up about availability
@@ -1081,36 +1368,54 @@ form {
         >
 
           <div>
-            <label for="name">Full Name</label>
+
+            <label for="name">
+              Full Name
+            </label>
+
             <input
               id="name"
               name="full_name"
               type="text"
               required
             />
+
           </div>
 
           <div>
-            <label for="email">Email Address</label>
+
+            <label for="email">
+              Email Address
+            </label>
+
             <input
               id="email"
               name="email"
               type="email"
               required
             />
+
           </div>
 
           <div>
-            <label for="phone">Phone Number</label>
+
+            <label for="phone">
+              Phone Number
+            </label>
+
             <input
               id="phone"
               name="phone"
               type="tel"
             />
+
           </div>
 
           <div>
-            <label for="veteran">Are you a veteran?</label>
+
+            <label for="veteran">
+              Are you a veteran?
+            </label>
 
             <select
               id="veteran"
@@ -1120,10 +1425,14 @@ form {
               <option>No</option>
               <option>Prefer not to say</option>
             </select>
+
           </div>
 
           <div>
-            <label for="referral">How did you hear about us?</label>
+
+            <label for="referral">
+              How did you hear about us?
+            </label>
 
             <input
               id="referral"
@@ -1131,9 +1440,11 @@ form {
               type="text"
               placeholder="Agency, church, friend, online, etc."
             />
+
           </div>
 
           <div>
+
             <label for="message">
               Tell us a little about your situation
             </label>
@@ -1142,6 +1453,7 @@ form {
               id="message"
               name="message"
             ></textarea>
+
           </div>
 
           <button
@@ -1154,19 +1466,26 @@ form {
         </form>
 
       </div>
+
     </section>
 
-    <section class="section reveal" id="faq">
+    <section
+      class="section reveal"
+      id="faq"
+    >
 
       <div class="section-kicker">
         Common questions
       </div>
 
-      <h2>Frequently Asked Questions</h2>
+      <h2>
+        Frequently Asked Questions
+      </h2>
 
       <div style="max-width:850px;margin:auto">
 
         <details>
+
           <summary>
             Who may submit a housing inquiry?
           </summary>
@@ -1175,9 +1494,11 @@ form {
             Veterans, family members, case managers, treatment providers, and referral partners
             may contact us.
           </p>
+
         </details>
 
         <details>
+
           <summary>
             Is the home drug and alcohol free?
           </summary>
@@ -1185,9 +1506,11 @@ form {
           <p>
             Yes. Residents are expected to maintain sobriety and follow all house rules.
           </p>
+
         </details>
 
         <details>
+
           <summary>
             Can organizations refer veterans?
           </summary>
@@ -1196,9 +1519,11 @@ form {
             Yes. Treatment providers, veteran organizations, churches, courts, and case managers
             may contact us regarding referrals.
           </p>
+
         </details>
 
         <details>
+
           <summary>
             How can the community help?
           </summary>
@@ -1207,50 +1532,86 @@ form {
             Support can include donations, household supplies, transportation assistance,
             mentorship, professional services, and volunteer projects.
           </p>
+
         </details>
 
       </div>
+
     </section>
 
-    <section class="section reveal" id="contact">
+    <section
+      class="section reveal"
+      id="contact"
+    >
 
       <div class="section-kicker">
         Contact
       </div>
 
-      <h2>Connect With DSMT</h2>
+      <h2>
+        Connect With DSMT
+      </h2>
 
       <div class="contact-grid">
 
         <div class="contact-card">
-          <h3>Organization</h3>
-          <p>Domus Sobrietatis Ministry Trust</p>
-        </div>
 
-        <div class="contact-card">
-          <h3>Location</h3>
-          <p>Lakewood, Ohio</p>
-        </div>
+          <h3>
+            Organization
+          </h3>
 
-        <div class="contact-card">
-          <h3>Email</h3>
           <p>
+            Domus Sobrietatis Ministry Trust
+          </p>
+
+        </div>
+
+        <div class="contact-card">
+
+          <h3>
+            Location
+          </h3>
+
+          <p>
+            Lakewood, Ohio
+          </p>
+
+        </div>
+
+        <div class="contact-card">
+
+          <h3>
+            Email
+          </h3>
+
+          <p>
+
             <a href="mailto:greatfeeling@bluemailx.com">
               greatfeeling@bluemailx.com
             </a>
+
           </p>
+
         </div>
 
         <div class="contact-card">
-          <h3>Phone</h3>
+
+          <h3>
+            Phone
+          </h3>
+
           <p>
+
             <a href="tel:12162009733">
               (216) 200-9733
             </a>
+
           </p>
+
         </div>
 
       </div>
+
     </section>
 
   </main>
@@ -1260,38 +1621,72 @@ form {
     <div class="footer-wrap">
 
       <div>
-        <h3>Domus Sobrietatis Ministry Trust</h3>
+
+        <h3>
+          Domus Sobrietatis Ministry Trust
+        </h3>
 
         <p class="small">
           Structured recovery housing and support for veterans in Northeast Ohio.
         </p>
 
         <p class="small">
-          © <span id="year"></span> Domus Sobrietatis Ministry Trust.
+          © <span id="year"></span>
+          Domus Sobrietatis Ministry Trust.
         </p>
+
       </div>
 
       <div>
-        <h4>Quick Links</h4>
-        <p><a href="#about">About</a></p>
-        <p><a href="#programs">Programs</a></p>
-        <p><a href="#apply">Apply</a></p>
-        <p><a href="#donate">Donate</a></p>
-      </div>
 
-      <div>
-        <h4>Contact</h4>
-        <p>Lakewood, Ohio</p>
+        <h4>
+          Quick Links
+        </h4>
+
         <p>
+          <a href="#about">About</a>
+        </p>
+
+        <p>
+          <a href="#programs">Programs</a>
+        </p>
+
+        <p>
+          <a href="#apply">Apply</a>
+        </p>
+
+        <p>
+          <a href="#donate">Donate</a>
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>
+          Contact
+        </h4>
+
+        <p>
+          Lakewood, Ohio
+        </p>
+
+        <p>
+
           <a href="mailto:greatfeeling@bluemailx.com">
             greatfeeling@bluemailx.com
           </a>
+
         </p>
+
         <p>
+
           <a href="tel:12162009733">
             (216) 200-9733
           </a>
+
         </p>
+
       </div>
 
     </div>
@@ -1306,12 +1701,20 @@ form {
     function getDonationAmount() {
 
       const input =
-        document.getElementById("donation-amount");
+        document.getElementById(
+          "donation-amount"
+        );
 
       const amount =
-        Number.parseFloat(input.value);
+        Number.parseFloat(
+          input.value
+        );
 
-      if (!Number.isFinite(amount) || amount < 1) {
+      if (
+        !Number.isFinite(amount) ||
+        amount < 1
+      ) {
+
         throw new Error(
           "Please enter a donation amount of at least $1.00."
         );
@@ -1320,12 +1723,55 @@ form {
       return amount.toFixed(2);
     }
 
-    function setDonationStatus(message, type = "") {
+    function getDonorDetails() {
+
+      const name =
+        document
+          .getElementById("donor-name")
+          .value
+          .trim();
+
+      const email =
+        document
+          .getElementById("donor-email")
+          .value
+          .trim();
+
+      if (!name) {
+
+        throw new Error(
+          "Please enter your name for the donation acknowledgment."
+        );
+      }
+
+      if (
+        !email ||
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+      ) {
+
+        throw new Error(
+          "Please enter a valid email address for your donation acknowledgment."
+        );
+      }
+
+      return {
+        name,
+        email
+      };
+    }
+
+    function setDonationStatus(
+      message,
+      type = ""
+    ) {
 
       const status =
-        document.getElementById("donation-status");
+        document.getElementById(
+          "donation-status"
+        );
 
-      status.textContent = message;
+      status.textContent =
+        message;
 
       status.className =
         `donation-status ${type}`.trim();
@@ -1350,6 +1796,9 @@ form {
           const amount =
             getDonationAmount();
 
+          const donor =
+            getDonorDetails();
+
           const response =
             await fetch(
               `${DSMT_WORKER}/create-order`,
@@ -1357,11 +1806,14 @@ form {
                 method: "POST",
 
                 headers: {
-                  "Content-Type": "application/json"
+                  "Content-Type":
+                    "application/json"
                 },
 
                 body: JSON.stringify({
-                  amount: amount
+                  amount: amount,
+                  donorName: donor.name,
+                  donorEmail: donor.email
                 })
               }
             );
@@ -1369,7 +1821,10 @@ form {
           const data =
             await response.json();
 
-          if (!response.ok || !data.id) {
+          if (
+            !response.ok ||
+            !data.id
+          ) {
 
             console.error(
               "Create order failed:",
@@ -1411,7 +1866,8 @@ form {
                 method: "POST",
 
                 headers: {
-                  "Content-Type": "application/json"
+                  "Content-Type":
+                    "application/json"
                 },
 
                 body: JSON.stringify({
@@ -1449,7 +1905,21 @@ form {
           );
 
           document
-            .getElementById("donation-amount")
+            .getElementById(
+              "donation-amount"
+            )
+            .disabled = true;
+
+          document
+            .getElementById(
+              "donor-name"
+            )
+            .disabled = true;
+
+          document
+            .getElementById(
+              "donor-email"
+            )
             .disabled = true;
 
         } catch (error) {
@@ -1486,7 +1956,9 @@ form {
         );
       }
 
-    }).render("#paypal-button-container");
+    }).render(
+      "#paypal-button-container"
+    );
 
     document
       .getElementById("year")
@@ -1494,28 +1966,36 @@ form {
       new Date().getFullYear();
 
     const revealItems =
-      document.querySelectorAll(".reveal");
+      document.querySelectorAll(
+        ".reveal"
+      );
 
-    if ("IntersectionObserver" in window) {
+    if (
+      "IntersectionObserver" in window
+    ) {
 
       const observer =
         new IntersectionObserver(
           (entries) => {
 
-            entries.forEach((entry) => {
+            entries.forEach(
+              (entry) => {
 
-              if (entry.isIntersecting) {
+                if (
+                  entry.isIntersecting
+                ) {
 
-                entry.target.classList.add(
-                  "visible"
-                );
-
-                observer.unobserve(
                   entry.target
-                );
-              }
+                    .classList
+                    .add("visible");
 
-            });
+                  observer.unobserve(
+                    entry.target
+                  );
+                }
+
+              }
+            );
 
           },
           {
@@ -1532,7 +2012,9 @@ form {
 
       revealItems.forEach(
         (item) =>
-          item.classList.add("visible")
+          item.classList.add(
+            "visible"
+          )
       );
     }
 
